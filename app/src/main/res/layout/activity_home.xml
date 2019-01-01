@@ -77,11 +77,12 @@
                     android:layout_alignParentTop="true"
                     android:background="@android:color/transparent"
                     android:gravity="left|top"
-                    android:paddingEnd="10dp"
                     android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
                     android:text="Alerts"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#C30909" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/zxing_viewfinder_laser"
+                    android:textStyle="bold" />
 
 
                 <LinearLayout
@@ -98,15 +99,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="1dp"
                         android:layout_marginTop="-10dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_toStartOf="@+id/trendArrow"
                         android:layout_weight="1"
                         android:background="@android:color/transparent"
                         android:gravity="right"
-                        android:paddingEnd="20dp"
                         android:paddingTop="0dp"
+                        android:paddingEnd="20dp"
                         android:text="13.3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textSize="50sp" />
 
                     <ImageView
@@ -135,53 +137,49 @@
                     android:id="@+id/extraStatusLine"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/notices"
+                    android:layout_alignParentStart="true"
                     android:background="@android:color/transparent"
                     android:gravity="left|top"
-                    android:paddingEnd="10dp"
                     android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
                     android:shadowColor="#ff212121"
                     android:shadowDx="0"
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Extra status line"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 <TextView
                     android:id="@+id/textBridgeBattery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/extraStatusLine"
+                    android:layout_alignParentStart="true"
                     android:layout_marginLeft="10dp"
                     android:background="@android:color/transparent"
                     android:inputType="none"
                     android:text="Battery Status"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 <TextView
                     android:id="@+id/lowpredict"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/textBridgeBattery"
-                    android:layout_marginRight="5dp"
+                    android:layout_alignParentStart="true"
                     android:layout_marginTop="-2dp"
+                    android:layout_marginRight="5dp"
                     android:background="@android:color/transparent"
                     android:gravity="left|top"
-                    android:paddingEnd="30dp"
                     android:paddingStart="35dp"
+                    android:paddingEnd="30dp"
                     android:shadowColor="#ff212121"
                     android:shadowDx="0"
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Low prediction"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#C30909"
-                    android:textStyle="bold" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 <ImageButton
                     android:id="@+id/btnTreatment"
@@ -271,22 +269,23 @@
                     android:shadowDy="1"
                     android:shadowRadius="0"
                     android:text="Treatment voice data appears here"
-                    android:textAlignment="gravity"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textSize="14dp" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/holo_green_light" />
 
                 <ImageButton
                     android:id="@+id/approveTreatment"
+                    style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/btnTreatment"
+                    android:layout_alignParentStart="true"
                     android:layout_marginStart="29dp"
                     android:contentDescription="Confirm Treatment"
                     android:src="@android:drawable/ic_input_add" />
 
                 <ImageButton
                     android:id="@+id/cancelTreatment"
+                    style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/approveTreatment"
@@ -295,8 +294,9 @@
 
                 <ImageButton
                     android:id="@+id/bloodTestButton"
-                    android:layout_width="wrap_content"
+                    style="@android:style/Widget.Holo.ImageButton"
 
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/cancelTreatment"
                     android:layout_marginStart="29dp"
@@ -312,16 +312,17 @@
                     android:layout_toEndOf="@+id/bloodTestButton"
                     android:background="@android:color/transparent"
                     android:text="102 mg/dl"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="@android:color/holo_green_light"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
+                    android:textSize="22sp" />
 
                 <ImageButton
                     android:id="@+id/buttonCarbs"
+                    style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/bloodTestButton"
                     android:layout_below="@+id/bloodTestButton"
+                    android:layout_alignStart="@+id/bloodTestButton"
                     android:src="@drawable/ic_local_dining_white_48dp" />
 
                 <TextView
@@ -339,10 +340,11 @@
 
                 <ImageButton
                     android:id="@+id/buttonInsulin"
+                    style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/buttonCarbs"
                     android:layout_below="@+id/buttonCarbs"
+                    android:layout_alignStart="@+id/buttonCarbs"
                     android:src="@drawable/ic_colorize_white_48dp" />
 
                 <TextView
@@ -354,16 +356,17 @@
                     android:layout_toEndOf="@+id/buttonInsulin"
                     android:background="@android:color/transparent"
                     android:text="14 units"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="@android:color/holo_green_light"
-                    android:textSize="22dp"
-                    android:textStyle="bold" />
+                    android:textSize="22dp" />
 
                 <ImageButton
                     android:id="@+id/timeButton"
+                    style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/approveTreatment"
                     android:layout_below="@+id/bloodTestButton"
+                    android:layout_alignStart="@+id/approveTreatment"
                     android:src="@drawable/ic_av_timer_white_36dp" />
 
                 <TextView
@@ -375,9 +378,9 @@
                     android:layout_toEndOf="@+id/timeButton"
                     android:background="@android:color/transparent"
                     android:text="00:00"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="@android:color/holo_green_light"
-                    android:textSize="22dp"
-                    android:textStyle="bold" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/parakeetbattery"
@@ -474,11 +477,12 @@
                 <TextView
                     android:id="@+id/nanoStatusText"
                     android:layout_width="0dp"
-                    android:layout_marginTop="2dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:layout_weight="1"
                     android:text="@{nano.color_watch, default=`Nano Status`}"
-                    app:showIfTrue="@{nano.color_watch.length() > 0}"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    app:showIfTrue="@{nano.color_watch.length() > 0}" />
 
             </LinearLayout>
 
@@ -494,10 +498,13 @@
 
                 <Button
                     android:id="@+id/sourceWizardButton"
+                    style="@style/zxing_ResultButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="sourceWizardButtonClick"
-                    android:text="@string/start_source_setup_wizard" />
+                    android:text="@string/start_source_setup_wizard"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -515,11 +522,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:longClickable="true"
-                    android:textSize="14sp"
                     android:minWidth="0dp"
                     android:onClick="timeButtonClick"
                     android:onLongClick="@{home::timeButtonLongClick}"
                     android:text="@{@string/hour_format(24)}"
+                    android:textSize="14sp"
                     app:button_indicate="@{home.isHourLocked(24, ui.ping)}" />
 
                 <Button

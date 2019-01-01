@@ -42,6 +42,7 @@
 
             <CheckBox
                 android:id="@+id/lowSeverityCheckBox"
+                style="@android:style/Widget.Material.Light.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.severity(1)}"
@@ -50,6 +51,7 @@
 
             <CheckBox
                 android:id="@+id/midSeverityCheckbox"
+                style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.severity(2)}"
@@ -58,6 +60,7 @@
 
             <CheckBox
                 android:id="@+id/highSeverityCheckbox"
+                style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.severity(3)}"
@@ -66,6 +69,7 @@
 
             <CheckBox
                 android:id="@+id/userEventLowCheckbox"
+                style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
@@ -75,6 +79,7 @@
 
             <CheckBox
                 android:id="@+id/userEventHighCheckbox"
+                style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="@{viewModel.severity(6)}"
