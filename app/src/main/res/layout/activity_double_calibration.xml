@@ -41,7 +41,7 @@
                         android:hint="@string/enter_first_bg_value"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <EditText
                         android:id="@+id/bg_value_2"
@@ -52,7 +52,7 @@
                         android:hint="@string/enter_second_bg_value"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}" />
 
                     <TextView
