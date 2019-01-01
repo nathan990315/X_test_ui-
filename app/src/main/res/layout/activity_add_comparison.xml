@@ -1,3 +1,4 @@
+
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
     android:layout_width="match_parent" android:layout_height="match_parent"
@@ -12,37 +13,38 @@
     tools:context="com.eveningoutpost.dexdrip.AddCalibration">
 
     <EditText
+        android:id="@+id/bg_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/bg_value"
-        android:autoText="false"
-        android:text=""
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="@string/enter_blood_glucose_value"
+        android:inputType="number"
         android:singleLine="true"
-        android:textAlignment="center"
-        android:textSize="24dp"
-        android:hint="@string/enter_blood_glucose_value" />
+        android:text=""
+        android:textAppearance="@style/CustomTitle2" />
 
     <Button
+        android:id="@+id/save_calibration_button"
+        style="@style/zxing_ResultButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/done"
-        android:id="@+id/save_calibration_button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="67dp" />
+        android:layout_marginBottom="125dp"
+        android:text="@string/done" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/this_does_not_get_used_for_anything_its_just_to_keep_track_of_differences_for_algorithem_improvement_purposes"
-        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:text="@string/this_does_not_get_used_for_anything_its_just_to_keep_track_of_differences_for_algorithem_improvement_purposes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </RelativeLayout>
 <fragment android:id="@+id/navigation_drawer"
