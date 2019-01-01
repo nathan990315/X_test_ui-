@@ -40,7 +40,7 @@
                         android:ems="10"
                         android:hint="@string/enter_first_bg_value"
                         android:inputType="numberDecimal"
-                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textSize="24sp" />
 
                     <EditText
@@ -51,9 +51,9 @@
                         android:ems="10"
                         android:hint="@string/enter_second_bg_value"
                         android:inputType="numberDecimal"
-                        android:textAlignment="center"
-                        android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}"
-                        android:textSize="24sp" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="24sp"
+                        android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -65,9 +65,12 @@
 
                     <Button
                         android:id="@+id/save_calibration_button"
+                        style="@style/zxing_ResultButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/done" />
+                        android:text="@string/done"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="24sp" />
 
                 </LinearLayout>
             </ScrollView>
