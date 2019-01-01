@@ -658,8 +658,7 @@
             android:exported="true"
             android:label="@string/number_wall_config" />
         <activity android:name=".ui.activities.TimePickerPrefActivity"></activity>
-    </application>
-import com.microsoft.appcenter.AppCenter; 
-import com.microsoft.appcenter.analytics.Analytics; 
-import com.microsoft.appcenter.crashes.Crashes;
+
+   </application>
+
 </manifest>
