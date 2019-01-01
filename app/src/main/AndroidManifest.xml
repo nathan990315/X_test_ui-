@@ -658,7 +658,5 @@
             android:exported="true"
             android:label="@string/number_wall_config" />
         <activity android:name=".ui.activities.TimePickerPrefActivity"></activity>
-
-   </application>
-
+ </application>
 </manifest>
