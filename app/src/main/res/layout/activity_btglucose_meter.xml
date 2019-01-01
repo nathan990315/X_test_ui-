@@ -20,6 +20,7 @@
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:fontFamily="monospace"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
@@ -32,13 +33,13 @@
         android:background="#ff444444"/>
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:longClickable="true"
         android:id="@android:id/list"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/bt_divider"
-        android:layout_alignParentStart="true">
-    </ListView>
+        android:layout_alignParentStart="true"
+        android:longClickable="true"></ListView>
 
 
 </RelativeLayout>
