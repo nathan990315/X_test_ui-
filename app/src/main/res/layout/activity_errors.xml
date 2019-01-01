@@ -22,65 +22,78 @@
                 android:id="@+id/linearLayout4">
 
                 <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Low"
                     android:id="@+id/lowSeverityCheckBox"
-                    android:checked="false"/>
-                <CheckBox
+                    style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mid"
+                    android:checked="false"
+                    android:text="Low" />
+
+                <CheckBox
                     android:id="@+id/midSeverityCheckbox"
-                    android:checked="true"/>
-                <CheckBox
+                    style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="High"
-                    android:id="@+id/highSeverityCheckbox"
-                    android:checked="true"/>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="EL"
-                    android:id="@+id/userEventLowCheckbox"
                     android:checked="true"
-                    android:layout_marginLeft="12dp" />
+                    android:text="Mid" />
+
                 <CheckBox
+                    android:id="@+id/highSeverityCheckbox"
+                    style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EH"
+                    android:checked="true"
+                    android:text="High" />
+
+                <CheckBox
+                    android:id="@+id/userEventLowCheckbox"
+                    style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:checked="true"
+                    android:text="EL" />
+
+                <CheckBox
                     android:id="@+id/userEventHighCheckbox"
-                    android:checked="true"/>
+                    style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="EH" />
             </LinearLayout>
 
             <ListView
+                android:id="@+id/errorList"
+                style="@style/Widget.AppCompat.ListView.DropDown"
                 android:layout_width="fill_parent"
                 android:layout_height="437dp"
-                android:id="@+id/errorList"
-                android:layout_below="@+id/linearLayout4"
-                android:layout_above="@+id/send_logs_button" />
+                android:layout_above="@+id/send_logs_button"
+                android:layout_below="@+id/linearLayout4" />
 
             <Button
-                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/send_logs_button"
+                style="@style/zxing_ResultButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:onClick="uploadLogs"
                 android:text="@string/upload_logs"
-                android:id="@+id/send_logs_button"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true" />
+                android:textSize="18sp" />
 
             <Switch
+                android:id="@+id/autorefresh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Auto refresh"
-                android:id="@+id/autorefresh"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
-                android:paddingBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
                 android:layout_marginBottom="7dp"
-                android:layout_marginLeft="5dp" />
+                android:paddingBottom="5dp"
+                android:switchTextAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:text="Auto refresh"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 
