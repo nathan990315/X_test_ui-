@@ -81,7 +81,7 @@
                     android:paddingEnd="10dp"
                     android:text="Alerts"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/zxing_viewfinder_laser"
+                    android:textColor="@color/colorAccent"
                     android:textStyle="bold" />
 
 
@@ -109,6 +109,7 @@
                         android:paddingEnd="20dp"
                         android:text="13.3"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="50sp" />
 
                     <ImageView
@@ -148,7 +149,8 @@
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Extra status line"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/textBridgeBattery"
@@ -160,7 +162,8 @@
                     android:background="@android:color/transparent"
                     android:inputType="none"
                     android:text="Battery Status"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/lowpredict"
@@ -179,7 +182,8 @@
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Low prediction"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorAccent" />
 
                 <ImageButton
                     android:id="@+id/btnTreatment"
