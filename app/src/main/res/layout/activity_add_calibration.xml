@@ -20,6 +20,7 @@
         android:layout_marginTop="41dp"
         android:autoText="false"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="@string/enter_blood_glucose_value"
         android:inputType="numberDecimal"
         android:singleLine="true"
@@ -34,6 +35,7 @@
         android:layout_below="@+id/bg_value"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
+        android:fontFamily="casual"
         android:text="@string/done" />
 
 </RelativeLayout>
