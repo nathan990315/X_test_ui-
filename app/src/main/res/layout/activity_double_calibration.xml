@@ -34,25 +34,27 @@
 
                     <EditText
                         android:id="@+id/bg_value_1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="285dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:ems="10"
+                        android:fontFamily="monospace"
                         android:hint="@string/enter_first_bg_value"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <EditText
                         android:id="@+id/bg_value_2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="295dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:ems="10"
+                        android:fontFamily="monospace"
                         android:hint="@string/enter_second_bg_value"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}" />
 
                     <TextView

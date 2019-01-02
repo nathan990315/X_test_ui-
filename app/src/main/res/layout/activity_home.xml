@@ -104,13 +104,18 @@
                         android:layout_toStartOf="@+id/trendArrow"
                         android:layout_weight="1"
                         android:background="@android:color/transparent"
+                        android:fontFamily="cursive"
                         android:gravity="right"
+                        android:lineSpacingExtra="12sp"
                         android:paddingTop="0dp"
                         android:paddingEnd="20dp"
                         android:text="13.3"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="50sp" />
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="50sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/trendArrow"
@@ -316,9 +321,7 @@
                     android:layout_toEndOf="@+id/bloodTestButton"
                     android:background="@android:color/transparent"
                     android:text="102 mg/dl"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textSize="22sp" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
                 <ImageButton
                     android:id="@+id/buttonCarbs"
