@@ -81,7 +81,7 @@
                     android:paddingEnd="10dp"
                     android:text="Alerts"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/zxing_viewfinder_laser"
+                    android:textColor="@color/colorAccent"
                     android:textStyle="bold" />
 
 
@@ -104,12 +104,18 @@
                         android:layout_toStartOf="@+id/trendArrow"
                         android:layout_weight="1"
                         android:background="@android:color/transparent"
+                        android:fontFamily="cursive"
                         android:gravity="right"
+                        android:lineSpacingExtra="12sp"
                         android:paddingTop="0dp"
                         android:paddingEnd="20dp"
                         android:text="13.3"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="50sp" />
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="50sp"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/trendArrow"
@@ -148,7 +154,8 @@
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Extra status line"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/textBridgeBattery"
@@ -160,7 +167,8 @@
                     android:background="@android:color/transparent"
                     android:inputType="none"
                     android:text="Battery Status"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/lowpredict"
@@ -179,7 +187,8 @@
                     android:shadowDy="0"
                     android:shadowRadius="14"
                     android:text="Low prediction"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorAccent" />
 
                 <ImageButton
                     android:id="@+id/btnTreatment"
@@ -312,9 +321,7 @@
                     android:layout_toEndOf="@+id/bloodTestButton"
                     android:background="@android:color/transparent"
                     android:text="102 mg/dl"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textColor="@android:color/holo_green_light"
-                    android:textSize="22sp" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
                 <ImageButton
                     android:id="@+id/buttonCarbs"

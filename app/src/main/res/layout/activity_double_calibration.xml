@@ -1,4 +1,4 @@
-<<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
 
@@ -38,11 +38,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:ems="10"
-                        android:fontFamily="monospace"
                         android:hint="@string/enter_first_bg_value"
                         android:inputType="numberDecimal"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="20sp" />
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
 
                     <EditText
                         android:id="@+id/bg_value_2"
@@ -50,12 +49,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:ems="10"
-                        android:fontFamily="monospace"
                         android:hint="@string/enter_second_bg_value"
                         android:inputType="numberDecimal"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textSize="20sp"
-                        android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}" />
+                        android:textAlignment="center"
+                        android:visibility="@{prefs.getbool(`use_double_calibrations`) ? View.VISIBLE : View.GONE}"
+                        android:textSize="24sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -67,12 +65,9 @@
 
                     <Button
                         android:id="@+id/save_calibration_button"
-                        style="@style/zxing_ResultButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/done"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="24sp" />
+                        android:text="@string/done" />
 
                 </LinearLayout>
             </ScrollView>
