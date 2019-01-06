@@ -19,6 +19,7 @@ import com.eveningoutpost.dexdrip.UtilityModels.BgGraphBuilder;
 import com.eveningoutpost.dexdrip.UtilityModels.BgSparklineBuilder;
 import com.eveningoutpost.dexdrip.UtilityModels.ColorCache;
 import com.eveningoutpost.dexdrip.UtilityModels.Pref;
+import com.eveningoutpost.dexdrip.UtilityModels.StatusLine;
 import com.eveningoutpost.dexdrip.calibrations.PluggableCalibration;
 
 import java.util.Date;
@@ -182,8 +183,8 @@ public class xDripWidget extends AppWidgetProvider {
                     views.setTextColor(R.id.readingAge, Color.WHITE);
                 }
 
-                if(showExstraStatus) {
-                    views.setTextViewText(R.id.widgetStatusLine, Home.extraStatusLine());
+               if(showExstraStatus) {
+                    views.setTextViewText(R.id.widgetStatusLine, StatusLine.extraStatusLine());
                     views.setViewVisibility(R.id.widgetStatusLine, View.VISIBLE);
                 } else {
                     views.setTextViewText(R.id.widgetStatusLine, "");
